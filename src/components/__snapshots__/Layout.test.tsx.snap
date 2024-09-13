@@ -1,0 +1,17 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Layout > should render correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiBox-root css-0"
+  >
+    <div
+      class="MuiContainer-root MuiContainer-maxWidthLg css-b5p8im-MuiContainer-root"
+    >
+      <div>
+        Content
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
