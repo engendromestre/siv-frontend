@@ -25,6 +25,15 @@ export const handlers = [
     await delay(150)
     return HttpResponse.json(categoryResponse)
   }),
+  http.delete(
+    `${baseUrl}/categories/:id`,
+    async () => {
+      await delay(150)
+      return HttpResponse.json(
+        { status: 204 },
+      )
+    },
+  ),
 ]
 
 const server = setupServer(...handlers)
@@ -88,5 +97,66 @@ describe("CategoryList", () => {
     })
   })
 
-  
+  it("should handle On FilterChange", async () => {
+    renderWithProviders(<CategoryList />)
+
+    await waitFor(() => {
+      const name = screen.getByText("PaleTurquoise")
+      expect(name).toBeInTheDocument()
+    })
+
+    const filterInput = screen.getByPlaceholderText("Search…")
+    fireEvent.change(filterInput, { target: { value: "Category" } })
+
+    await waitFor(() => {
+      const loading = screen.getByRole("progressbar")
+      expect(loading).toBeInTheDocument()
+    })
+  })
+
+  it("should clear filter when no filter values are provided", async () => {
+    // Renderiza o componente
+    renderWithProviders(<CategoryList />)
+
+    // Espera que os dados sejam carregados inicialmente
+    await waitFor(() => {
+      const name = screen.getByText("PaleTurquoise")
+      expect(name).toBeInTheDocument()
+    })
+
+    // Simula a mudança de filtro para algo
+    const filterInput = screen.getByPlaceholderText("Search…")
+    fireEvent.change(filterInput, { target: { value: "Category" } })
+
+    // Espera pelo carregamento enquanto o filtro está ativo
+    await waitFor(() => {
+      const loading = screen.getByRole("progressbar")
+      expect(loading).toBeInTheDocument()
+    })
+
+    // Simula a limpeza do filtro
+    fireEvent.change(filterInput, { target: { value: "" } })
+
+    await waitFor(() => {
+      expect(screen.getByText("PaleTurquoise")).toBeInTheDocument()
+      expect(screen.getByText("XaleTurquoise")).toBeInTheDocument()
+    })
+  })
+
+  it("should handle Delete Category success", async () => {
+    renderWithProviders(<CategoryList />)
+
+    await waitFor(() => {
+      const name = screen.getByText("PaleTurquoise")
+      expect(name).toBeInTheDocument()
+    })
+
+    const deleteButton = screen.getAllByTestId("DeleteIcon")[0]
+    fireEvent.click(deleteButton)
+
+    await waitFor(() => {
+      const name = screen.getByText("Category deleted successfully!")
+      expect(name).toBeInTheDocument()
+    })
+  })
 })
