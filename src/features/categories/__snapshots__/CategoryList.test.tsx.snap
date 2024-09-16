@@ -35,7 +35,7 @@ exports[`CategoryList > should render correctly 1`] = `
             aria-label="Export"
             class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-colorPrimary css-1knaqv7-MuiButtonBase-root-MuiButton-root"
             data-mui-internal-clone-element="true"
-            id=":r6:"
+            id=":r17:"
             tabindex="0"
             type="button"
           >
@@ -83,7 +83,7 @@ exports[`CategoryList > should render correctly 1`] = `
               <input
                 aria-invalid="false"
                 class="MuiInputBase-input MuiInput-input MuiInputBase-inputTypeSearch MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-c63i49-MuiInputBase-input-MuiInput-input"
-                id=":r9:"
+                id=":r1a:"
                 placeholder="Search…"
                 type="search"
                 value=""
@@ -214,7 +214,7 @@ exports[`CategoryList > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":re:"
+                          id=":r1f:"
                           tabindex="-1"
                           type="button"
                         >
@@ -322,7 +322,7 @@ exports[`CategoryList > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":ri:"
+                          id=":r1j:"
                           tabindex="-1"
                           type="button"
                         >
@@ -430,7 +430,7 @@ exports[`CategoryList > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rm:"
+                          id=":r1n:"
                           tabindex="-1"
                           type="button"
                         >
@@ -538,7 +538,7 @@ exports[`CategoryList > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":rq:"
+                          id=":r1r:"
                           tabindex="-1"
                           type="button"
                         >
@@ -646,7 +646,7 @@ exports[`CategoryList > should render correctly 1`] = `
                           aria-label="Menu"
                           class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall MuiDataGrid-menuIconButton css-1pe4mpk-MuiButtonBase-root-MuiIconButton-root"
                           data-mui-internal-clone-element="true"
-                          id=":ru:"
+                          id=":r1v:"
                           tabindex="-1"
                           type="button"
                         >
@@ -762,7 +762,7 @@ exports[`CategoryList > should render correctly 1`] = `
               />
               <p
                 class="MuiTablePagination-selectLabel css-pdct74-MuiTablePagination-selectLabel"
-                id=":rb:"
+                id=":r1c:"
               >
                 Rows per page:
               </p>
@@ -770,12 +770,12 @@ exports[`CategoryList > should render correctly 1`] = `
                 class="MuiInputBase-root MuiInputBase-colorPrimary MuiTablePagination-input css-16c50h-MuiInputBase-root-MuiTablePagination-select"
               >
                 <div
-                  aria-controls=":rc:"
+                  aria-controls=":r1d:"
                   aria-expanded="false"
                   aria-haspopup="listbox"
-                  aria-labelledby=":rb: :ra:"
+                  aria-labelledby=":r1c: :r1b:"
                   class="MuiSelect-select MuiTablePagination-select MuiSelect-standard MuiInputBase-input css-194a1fa-MuiSelect-select-MuiInputBase-input"
-                  id=":ra:"
+                  id=":r1b:"
                   role="combobox"
                   tabindex="0"
                 >

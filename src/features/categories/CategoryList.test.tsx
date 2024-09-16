@@ -1,12 +1,27 @@
 import { delay, http, HttpResponse } from "msw"
 import { setupServer } from "msw/node"
-import { renderWithProviders, screen, waitFor } from "../../utils/test-utils"
+import {
+  fireEvent,
+  renderWithProviders,
+  screen,
+  waitFor,
+} from "../../utils/test-utils"
 import { baseUrl } from "../api/apiSlice"
 import { CategoryList } from "./CategoryList"
-import { categoryResponse } from "./mocks"
+import { categoryResponse, categoryResponse2 } from "./mocks/category"
 
 export const handlers = [
-  http.get(`${baseUrl}/categories`, async () => {
+  http.get(`${baseUrl}/categories`, async ({ request }) => {
+    const url = new URL(request.url)
+    const page = url.searchParams.get("page")
+    // const perPage = url.searchParams.get("per_page")
+    // console.log(`Requested page: ${page}, per_page: ${perPage}`)
+
+    if (page === "2") {
+      await delay(150)
+      return HttpResponse.json(categoryResponse2)
+    }
+
     await delay(150)
     return HttpResponse.json(categoryResponse)
   }),
@@ -43,7 +58,7 @@ describe("CategoryList", () => {
 
   it("should render error state", async () => {
     server.use(
-      http.get(`${baseUrl}/categories`, () => {
+      http.get(`${baseUrl}/categories`, async () => {
         return HttpResponse.error()
       }),
     )
@@ -54,4 +69,24 @@ describe("CategoryList", () => {
       expect(error).toBeInTheDocument()
     })
   })
+
+  it("should handle On PageChange", async () => {
+    renderWithProviders(<CategoryList />)
+
+    await waitFor(() => {
+      const name = screen.getByText("PaleTurquoise")
+      expect(name).toBeInTheDocument()
+    })
+
+    const nextButton = screen.getByTitle("Go to next page")
+    fireEvent.click(nextButton)
+
+    await waitFor(() => {
+      // Verifique se o item da segunda página está presente
+      const name = screen.getByText("SeaGreen")
+      expect(name).toBeInTheDocument()
+    })
+  })
+
+  
 })
