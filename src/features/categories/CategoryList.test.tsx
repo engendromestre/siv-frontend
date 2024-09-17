@@ -25,15 +25,10 @@ export const handlers = [
     await delay(150)
     return HttpResponse.json(categoryResponse)
   }),
-  http.delete(
-    `${baseUrl}/categories/:id`,
-    async () => {
-      await delay(150)
-      return HttpResponse.json(
-        { status: 204 },
-      )
-    },
-  ),
+  http.delete(`${baseUrl}/categories/:id`, async () => {
+    await delay(150)
+    return HttpResponse.json({ status: 204 })
+  }),
 ]
 
 const server = setupServer(...handlers)
@@ -159,4 +154,8 @@ describe("CategoryList", () => {
       expect(name).toBeInTheDocument()
     })
   })
+
+  
+
+
 })

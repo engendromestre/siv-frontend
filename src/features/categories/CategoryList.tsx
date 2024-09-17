@@ -59,9 +59,6 @@ export const CategoryList = () => {
     if (deleteCategoryStatus.isSuccess) {
       enqueueSnackbar("Category deleted successfully!", { variant: "success" })
     }
-    if (deleteCategoryStatus.isError) {
-      enqueueSnackbar("Error deleting category!", { variant: "error" })
-    }
     if (error) {
       enqueueSnackbar("Error fetching category!", { variant: "error" })
     }
