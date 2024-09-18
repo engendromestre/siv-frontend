@@ -8,7 +8,7 @@ import {
 } from "../../utils/test-utils"
 import { baseUrl } from "../api/apiSlice"
 import { CategoryList } from "./CategoryList"
-import { categoryResponse, categoryResponse2 } from "./mocks/category"
+import { categoryResponse, categoryResponse2 } from "../mocks/category"
 
 export const handlers = [
   http.get(`${baseUrl}/categories`, async ({ request }) => {

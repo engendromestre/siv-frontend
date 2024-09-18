@@ -9,7 +9,7 @@ import { CastMembersCreate } from "./features/cast/CastMembersCreate"
 import { CastMembersEdit } from "./features/cast/CastMembersEdit"
 import { CastMembersList } from "./features/cast/CastMembersList"
 import { CategoryCreate } from "./features/categories/CategoryCreate"
-import CategoryEdit from "./features/categories/CategoryEdit"
+import { CategoryEdit }  from "./features/categories/CategoryEdit"
 import { CategoryList } from "./features/categories/CategoryList"
 
 const App = () => {

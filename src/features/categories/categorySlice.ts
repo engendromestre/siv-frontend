@@ -54,7 +54,7 @@ const parseQueryParams = (params: CategoryParams) => {
     }
 
     if (params.is_active) {
-        queryParams.append("isActive", params.is_active.toString())
+        queryParams.append("is_active", params.is_active.toString())
     }
 
     return queryParams.toString()

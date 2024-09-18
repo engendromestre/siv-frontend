@@ -6,7 +6,7 @@ import { useGetCategoryQuery, useUpdateCategoryMutation } from "./categorySlice"
 import type { Category } from "../../types/Category"
 import { CategoryForm } from "./components/CategoryForm"
 
-const CategoryEdit: React.FC = () => {
+export const CategoryEdit = () => {
   const id = useParams().id || ""
   const { data: category } = useGetCategoryQuery({ id })
   const [updateCategoryQuery, status] = useUpdateCategoryMutation()
@@ -35,12 +35,7 @@ const CategoryEdit: React.FC = () => {
 
   useEffect(() => {
     if (category) {
-      setCategoryState({
-        id: category.data.id || "",
-        name: category.data.name || "",
-        description: category.data.description || "",
-        is_active: category.data.is_active ?? true,
-      })
+      setCategoryState(category.data)
     }
   }, [category])
 
@@ -72,5 +67,3 @@ const CategoryEdit: React.FC = () => {
     </Box>
   )
 }
-
-export default CategoryEdit
