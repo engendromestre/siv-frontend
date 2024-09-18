@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`CategoryCreate > should render corretly 1`] = `
+exports[`Category Edit > should render corretly 1`] = `
 <DocumentFragment>
   <div
     class="MuiBox-root css-0"
@@ -17,7 +17,7 @@ exports[`CategoryCreate > should render corretly 1`] = `
           <h4
             class="MuiTypography-root MuiTypography-h4 css-5lbw0b-MuiTypography-root"
           >
-            Create Category
+            Edit Category
           </h4>
         </div>
       </div>

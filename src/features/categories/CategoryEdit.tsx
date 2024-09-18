@@ -8,7 +8,7 @@ import { CategoryForm } from "./components/CategoryForm"
 
 const CategoryEdit: React.FC = () => {
   const id = useParams().id || ""
-  const { data: category, isFetching } = useGetCategoryQuery({ id })
+  const { data: category } = useGetCategoryQuery({ id })
   const [updateCategoryQuery, status] = useUpdateCategoryMutation()
   const [categoryState, setCategoryState] = useState<Category>({
     id: "",
@@ -35,7 +35,12 @@ const CategoryEdit: React.FC = () => {
 
   useEffect(() => {
     if (category) {
-      setCategoryState(category.data)
+      setCategoryState({
+        id: category.data.id || "",
+        name: category.data.name || "",
+        description: category.data.description || "",
+        is_active: category.data.is_active ?? true,
+      })
     }
   }, [category])
 

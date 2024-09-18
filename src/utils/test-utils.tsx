@@ -70,5 +70,4 @@ export const renderWithProviders = (
   }
 }
 
-export * from "@testing-library/react";
-
+export * from "@testing-library/react"

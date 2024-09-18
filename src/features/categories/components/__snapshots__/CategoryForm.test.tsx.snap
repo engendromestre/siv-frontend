@@ -127,6 +127,7 @@ exports[`CategoryForm > should render CategoryForm correctly 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
                   data-testid="is_active"
                 >
                   <input
@@ -318,6 +319,7 @@ exports[`CategoryForm > should render CategoryForm with disabled 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
                   data-testid="is_active"
                 >
                   <input
@@ -505,6 +507,7 @@ exports[`CategoryForm > should render CategoryForm with loading 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
                   data-testid="is_active"
                 >
                   <input

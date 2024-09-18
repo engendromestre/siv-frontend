@@ -154,8 +154,4 @@ describe("CategoryList", () => {
       expect(name).toBeInTheDocument()
     })
   })
-
-  
-
-
 })
