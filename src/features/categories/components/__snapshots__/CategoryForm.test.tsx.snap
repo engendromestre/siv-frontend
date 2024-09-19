@@ -38,6 +38,7 @@ exports[`CategoryForm > should render CategoryForm correctly 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="name"
                   id=":r0:"
                   name="name"
                   required=""
@@ -89,6 +90,7 @@ exports[`CategoryForm > should render CategoryForm correctly 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="description"
                   id=":r1:"
                   name="description"
                   required=""
@@ -125,6 +127,8 @@ exports[`CategoryForm > should render CategoryForm correctly 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
+                  data-testid="is_active"
                 >
                   <input
                     aria-label="controlled"
@@ -224,6 +228,7 @@ exports[`CategoryForm > should render CategoryForm with disabled 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="name"
                   disabled=""
                   id=":r4:"
                   name="name"
@@ -276,6 +281,7 @@ exports[`CategoryForm > should render CategoryForm with disabled 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input Mui-disabled css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="description"
                   disabled=""
                   id=":r5:"
                   name="description"
@@ -313,6 +319,8 @@ exports[`CategoryForm > should render CategoryForm with disabled 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
+                  data-testid="is_active"
                 >
                   <input
                     aria-label="controlled"
@@ -410,6 +418,7 @@ exports[`CategoryForm > should render CategoryForm with loading 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="name"
                   id=":r2:"
                   name="name"
                   required=""
@@ -461,6 +470,7 @@ exports[`CategoryForm > should render CategoryForm with loading 1`] = `
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                  data-testid="description"
                   id=":r3:"
                   name="description"
                   required=""
@@ -497,6 +507,8 @@ exports[`CategoryForm > should render CategoryForm with loading 1`] = `
               >
                 <span
                   class="MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked PrivateSwitchBase-root MuiSwitch-switchBase MuiSwitch-colorSecondary Mui-checked Mui-checked css-ob1t9r-MuiButtonBase-root-MuiSwitch-switchBase"
+                  data-checked="true"
+                  data-testid="is_active"
                 >
                   <input
                     aria-label="controlled"

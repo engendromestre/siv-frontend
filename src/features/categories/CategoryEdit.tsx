@@ -6,9 +6,9 @@ import { useGetCategoryQuery, useUpdateCategoryMutation } from "./categorySlice"
 import type { Category } from "../../types/Category"
 import { CategoryForm } from "./components/CategoryForm"
 
-const CategoryEdit: React.FC = () => {
+export const CategoryEdit = () => {
   const id = useParams().id || ""
-  const { data: category, isFetching } = useGetCategoryQuery({ id })
+  const { data: category } = useGetCategoryQuery({ id })
   const [updateCategoryQuery, status] = useUpdateCategoryMutation()
   const [categoryState, setCategoryState] = useState<Category>({
     id: "",
@@ -67,5 +67,3 @@ const CategoryEdit: React.FC = () => {
     </Box>
   )
 }
-
-export default CategoryEdit

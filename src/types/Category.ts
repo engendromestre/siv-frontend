@@ -26,5 +26,5 @@ export interface CategoryParams {
     page?: number
     per_page?: number
     filter?: string
-    isActive?: boolean
+    is_active?: boolean
 }

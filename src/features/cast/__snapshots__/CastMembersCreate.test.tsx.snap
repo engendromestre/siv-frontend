@@ -57,6 +57,7 @@ exports[`CastMembersCreate > should render corretly 1`] = `
                     <input
                       aria-invalid="false"
                       class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+                      data-testid="name"
                       id=":r0:"
                       name="name"
                       required=""
@@ -93,6 +94,7 @@ exports[`CastMembersCreate > should render corretly 1`] = `
                 <div
                   aria-labelledby="type of cast member"
                   class="MuiFormGroup-root MuiRadioGroup-root css-dmmspl-MuiFormGroup-root"
+                  data-testid="type"
                   role="radiogroup"
                 >
                   <label
