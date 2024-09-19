@@ -60,10 +60,10 @@ export const CastMembersList = () => {
     if (deleteCastMemberStatus.isSuccess) {
       enqueueSnackbar("Cast Member deleted", { variant: "success" })
     }
-    if (deleteCastMemberStatus.isError) {
+    if (error) {
       enqueueSnackbar("Cast Member not deleted", { variant: "error" })
     }
-  }, [deleteCastMemberStatus, enqueueSnackbar])
+  }, [error, deleteCastMemberStatus, enqueueSnackbar])
 
   if (error) {
     return <div>Error fetching cast members</div>
