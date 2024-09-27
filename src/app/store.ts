@@ -4,11 +4,13 @@ import { setupListeners } from "@reduxjs/toolkit/query";
 import { apiSlice } from "../features/api/apiSlice";
 import { categoriesApiSlice } from "../features/categories/categorySlice";
 import { castMembersApiSlice } from "../features/cast/castMembersSlice";
+import { genresApiSlice } from "../features/genre/genreSlice";
 
 const rootReducer = combineReducers({
   api: apiSlice.reducer,
   categories: categoriesApiSlice.reducer,
   castMembers: castMembersApiSlice.reducer,
+  genres: genresApiSlice.reducer,
 });
 
 export const makeStore = (preloadedState?: Partial<RootState>) => {

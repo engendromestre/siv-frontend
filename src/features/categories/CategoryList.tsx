@@ -57,7 +57,7 @@ export const CategoryList = () => {
 
   useEffect(() => {
     if (deleteCategoryStatus.isSuccess) {
-      enqueueSnackbar("Category deleted successfully!", { variant: "success" })
+      enqueueSnackbar("Category deleted", { variant: "success" })
     }
     if (error) {
       enqueueSnackbar("Error fetching category!", { variant: "error" })

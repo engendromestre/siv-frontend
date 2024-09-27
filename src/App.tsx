@@ -9,8 +9,11 @@ import { CastMembersCreate } from "./features/cast/CastMembersCreate"
 import { CastMembersEdit } from "./features/cast/CastMembersEdit"
 import { CastMembersList } from "./features/cast/CastMembersList"
 import { CategoryCreate } from "./features/categories/CategoryCreate"
-import { CategoryEdit }  from "./features/categories/CategoryEdit"
+import { CategoryEdit } from "./features/categories/CategoryEdit"
 import { CategoryList } from "./features/categories/CategoryList"
+import { GenreCreate } from "./features/genre/GenreCreate"
+import { GenreEdit } from "./features/genre/GenreEdit"
+import { GenreList } from "./features/genre/GenreList"
 
 const App = () => {
   return (
@@ -42,6 +45,10 @@ const App = () => {
               <Route path="/cast-members" element={<CastMembersList />} />
               <Route path="/cast-members/create" element={<CastMembersCreate />} />
               <Route path="/cast-members/edit/:id" element={<CastMembersEdit />} />
+               {/* Genre */}
+               <Route path="/genres" element={<GenreList />} />
+               <Route path="/genres/create" element={<GenreCreate />} />
+               <Route path="/genres/edit/:id" element={<GenreEdit />} />
               <Route
                 path="*"
                 element={

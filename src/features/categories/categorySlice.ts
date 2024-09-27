@@ -1,7 +1,7 @@
 import type { Category, CategoryParams, Result, Results } from "../../types/Category";
 import { apiSlice } from "../api/apiSlice";
 
-const getCategoriesParams = ({
+const getCategories = ({
     page = 1,
     per_page = 10,
     filter = "" }) => {
@@ -63,7 +63,7 @@ const parseQueryParams = (params: CategoryParams) => {
 export const categoriesApiSlice = apiSlice.injectEndpoints({
     endpoints: ({ query, mutation }) => ({
         getCategories: query<Results, CategoryParams>({
-            query: getCategoriesParams,
+            query: getCategories,
             providesTags: ["Categories"],
         }),
         getCategory: query<Result, { id: string }>({
