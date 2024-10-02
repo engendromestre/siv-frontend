@@ -234,8 +234,8 @@ export const genreResponse = {
     meta: {
         current_page: 1,
         per_page: 10,
-        last_page: 1,
-        total: 10
+        last_page: 2,
+        total: 12
     }
 };
 
@@ -290,10 +290,10 @@ export const genreResponse2 = {
         }
     ],
     meta: {
-        current_page: 1,
+        current_page: 2,
         per_page: 2,
-        last_page: 1,
-        total: 2
+        last_page: 2,
+        total: 12
     }
 };
 

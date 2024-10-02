@@ -29,7 +29,7 @@ const parseQueryParams = (params: GenreParams) => {
     }
 
     if (params.is_active) {
-        query.append("filter[type]", params.is_active.toString());
+        query.append("filter[is_active]", params.is_active.toString());
     }
 
     return query.toString();

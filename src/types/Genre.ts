@@ -1,4 +1,4 @@
-export interface Results {
+export interface Genres {
     data: Genre[]
     meta: Meta
 }
@@ -24,9 +24,9 @@ export interface Category {
 }
 
 export interface Meta {
-    current_page: number
-    per_page: number
-    last_page: number
+    currentPage: number
+    perPage: number
+    lastPage: number
     total: number
 }
 
