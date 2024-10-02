@@ -60,12 +60,12 @@ export const categoryResponse = {
             description: "DarkOrchid Description",
             is_active: true
         },
-        {
-            id: "17e65d6c-bb98-4d51-9cf6-5de8a8d5f4f6",
-            name: "Coral",
-            description: "Coral Description",
-            is_active: true
-        }
+        // {
+        //     id: "17e65d6c-bb98-4d51-9cf6-5de8a8d5f4f6",
+        //     name: "Coral",
+        //     description: "Coral Description",
+        //     is_active: true
+        // }
     ],
     "meta": {
         current_page: 1,

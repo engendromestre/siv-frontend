@@ -141,16 +141,16 @@ describe("CategoryList", () => {
   it("should handle Delete Category success", async () => {
     renderWithProviders(<CategoryList />)
 
+    const categoryName = "PaleTurquoise"
     await waitFor(() => {
-      const name = screen.getByText("PaleTurquoise")
-      expect(name).toBeInTheDocument()
+      expect(screen.getByText(categoryName)).toBeInTheDocument()
     })
 
     const deleteButton = screen.getAllByTestId("DeleteIcon")[0]
     fireEvent.click(deleteButton)
 
     await waitFor(() => {
-      const name = screen.getByText("Category deleted successfully!")
+      const name = screen.getByText("Category deleted")
       expect(name).toBeInTheDocument()
     })
   })

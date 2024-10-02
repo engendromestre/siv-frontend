@@ -6,6 +6,9 @@ export default defineConfig({
   plugins: [react()],
   server: {
     open: true,
+    fs: {
+      allow: ['.'] // Permite acessar todas as pastas no seu sistema de arquivos local.
+    }
   },
   test: {
     globals: true,
